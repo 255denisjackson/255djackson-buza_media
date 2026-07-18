@@ -640,7 +640,8 @@ nav{background:var(--primary);color:#fff;position:sticky;top:0;z-index:100;width
           </div>
           <div class="form-group">
             <label><i class="ti ti-plug-connected" aria-hidden="true"></i> Apps Script Web App URL (optional — enables posting from this form)</label>
-            <input type="text" id="sheet-write-url" placeholder="https://script.google.com/macros/s/XXXXXXXXXXXX/exec">
+            <input type="text" id="sheet-write-url" placeholder="https://script.google.com/macros/s/XXXXXXXXXXXX/exec" 
+              value="https://script.google.com/macros/s/AKfycbyoHgi-IOnwBgItowR-kV-z64CwMCkLbcra3BOLBr_zjNkfo9vntPvMSsTy9lw7vnAW/exec">
             <span class="field-hint">Reading the sheet (above) needs nothing extra. To let the Compose form add rows directly to your sheet: open your sheet → Extensions → Apps Script → delete any starter code → paste the script below (after picking your own secret key, see next field) → Deploy → <strong>New deployment</strong> → type "Web app" → Execute as: <strong>Me</strong> → Who has access: <strong>Anyone</strong> → Deploy → copy the URL ending in <code>/exec</code> and paste it here.</span>
           </div>
           <div class="form-group">
