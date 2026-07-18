@@ -4,8 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Buza Media</title>
+<link rel="icon" class="brand" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-VEGp5-p5kvixOHe0YYJI3i-ax0Fe1Pd36-7mycylVQ&s=10">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <style>
+  .brand{
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    object-fit: cover;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--primary:#1a1a2e;--accent:#2065fe;--accent-hover:#1751d1;--breaking:#e63946;--accent2:#457b9d;--bg:#f8f9fa;--card:#fff;--border:#e0e0e0;--text:#1a1a1e;--muted:#6c757d;--tag-bg:#eef2ff;--tag-color:#3730a3}
 html,body{width:100%;overflow-x:hidden}
@@ -341,7 +348,7 @@ nav{background:var(--primary);color:#fff;position:sticky;top:0;z-index:100;width
 <nav>
   <div class="nav-top">
     <div class="nav-brand" onclick="goHome()">
-      <div class="nav-brand-mark">B</div>
+      <link rel="icon" class="brand" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-VEGp5-p5kvixOHe0YYJI3i-ax0Fe1Pd36-7mycylVQ&s=10">
       <div class="nav-brand-text">BUZA<span>MEDIA</span></div>
     </div>
     <div class="nav-controls" id="nav-controls">
@@ -411,7 +418,7 @@ nav{background:var(--primary);color:#fff;position:sticky;top:0;z-index:100;width
   <div class="login-card">
     <div class="login-back" onclick="goHome()"><i class="ti ti-arrow-left" aria-hidden="true"></i> Back to site</div>
     <div class="login-logo">
-      <div class="login-logo-mark">B</div>
+      <link rel="icon" class="brand" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-VEGp5-p5kvixOHe0YYJI3i-ax0Fe1Pd36-7mycylVQ&s=10">
       <div class="login-logo-text">BUZA<span>MEDIA</span></div>
     </div>
     <p class="login-subtitle">Sign in to the admin dashboard to publish and manage stories.</p>
@@ -419,12 +426,12 @@ nav{background:var(--primary);color:#fff;position:sticky;top:0;z-index:100;width
     <div class="login-field">
       <label>Email</label>
       <div class="login-input-wrap"><i class="ti ti-mail" aria-hidden="true"></i>
-        <input type="email" id="login-email" placeholder="editor@buzamedia.com" value="admin@buzamedia.com"></div>
+        <input type="email" id="login-email" placeholder="username"></div>
     </div>
     <div class="login-field">
       <label>Password</label>
       <div class="login-input-wrap"><i class="ti ti-lock" aria-hidden="true"></i>
-        <input type="password" id="login-password" placeholder="Enter your password" value="buza2026"></div>
+        <input type="password" id="login-password" placeholder="Enter your password"></div>
     </div>
     <button class="login-btn" onclick="doLogin()"><i class="ti ti-login-2" aria-hidden="true"></i> Sign in</button>
     <div class="login-hint">Demo credentials are pre-filled — just click <strong>Sign in</strong>.<br>Email <code>admin@buzamedia.com</code> · Password <code>buza2026</code></div>
