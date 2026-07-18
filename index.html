@@ -338,8 +338,6 @@ nav{background:var(--primary);color:#fff;position:sticky;top:0;z-index:100;width
 </head>
 <body>
 
-<h2 class="sr-only">Buza Media — news platform with working logout, social media icons, and post engagement features</h2>
-
 <nav>
   <div class="nav-top">
     <div class="nav-brand" onclick="goHome()">
@@ -832,8 +830,8 @@ const SHEET_CFG_KEY='buzamedia_sheet_cfg_v1';
 // Default Google Sheet the site loads on first visit — exactly like a pre-filled login
 // credential. Anyone using this admin panel can change it in the Google Sheet tab and
 // click "Connect & sync now" to point the site at a different spreadsheet instead.
-const DEFAULT_SHEET_ID='1lyKBq-6lJFuruqvAdq39jSfRguxDcvb7TPeT-uz0Bn0';
-let sheetConfig={sheetId:DEFAULT_SHEET_ID,sheetName:'Articles',writeUrl:'1lyKBq-6lJFuruqvAdq39jSfRguxDcvb7TPeT-uz0Bn0',writeSecret:'',connected:false,lastSync:null};
+const DEFAULT_SHEET_ID='1jKHdiVKQg_vOIQLlaMm4ooeDdk8_-EoSKS4v9bw5nqo';
+let sheetConfig={sheetId:DEFAULT_SHEET_ID,sheetName:'Articles',writeUrl:'',writeSecret:'',connected:false,lastSync:null};
 
 function loadSheetConfig(){
   try{const d=localStorage.getItem(SHEET_CFG_KEY);if(d)sheetConfig=Object.assign(sheetConfig,JSON.parse(d));}catch(e){}
